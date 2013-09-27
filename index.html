@@ -43,6 +43,11 @@
 				<section>
 					<section>
 						<h2>Authorization Code Grant</h2>
+						<ul>
+							<li>Closest to OAuth 1.0</li>
+							<li>Typical workflow with webapp where services are provided on the same host as the ui</li>
+							<li>Use Refresh Token to prevent long lived Access Token or constant re-authorization of client</li>
+						</ul>
 					</section>
 					<section>
 						<p>
@@ -98,6 +103,10 @@
 				<section>
 					<section>
 						<h2>Implicit Grant</h2>
+						<ul>
+							<li>All client side so skip authenticating client</li>
+							<li>Client id and host in callback provide some security</li>
+						</ul>
 					</section>
 					<section>
 						<p>
@@ -140,6 +149,10 @@
 				<section>
 					<section>
 						<h2>Resource Owner Credentials</h2>
+						<ul>
+							<li>Only for <em>very</em> trusted applications because client collects user credentials</li>
+							<li>Avoid...</li>
+						</ul>
 					</section>
 					<section>
 						<p>
@@ -173,6 +186,11 @@
 				<section>
 					<section>
 						<h2>Client Credentials</h2>
+						<ul>
+							<li>Use only with <em>very</em> trusted clients</li>
+							<li>Relies fully on Client authentication</li>
+							<li>Useful for "in network" services/resources which need access to other "in network" services/resources</li>
+						</ul>
 					</section>
 					<section>
 						<p>
